@@ -1,0 +1,165 @@
+body {
+    background-color: black;
+    background-image: url(../media/room.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". . nav nav"
+        ". . header header"
+        ". . main main . ."
+        "footer footer footer footer";
+}
+
+.main {
+
+    grid-area: main;
+
+}
+
+#descbox {
+    
+    text-align: center;
+    align-content: center;
+}
+
+.header {
+
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.navItem {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.navItem li {
+    float: right;
+
+}
+
+.navItem li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    font-size: 130%;
+    text-decoration: none;
+}
+
+.navItem li a:hover {
+    color: gray;
+}
+
+.navItem li a:active {
+    color: gold;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+main {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    margin: 50px;
+}
+
+.desc {
+    color: white;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+    font-size: 500%;
+    text-shadow: 0 0 50px #000000;
+    color: white;
+}
+
+.h2 {
+    text-align: center;
+    padding-bottom: 6%;
+    color: white;
+    text-shadow: 0 0 50px #000000;
+}
+
+#desc {
+    text-align: center;
+    color: white;
+}
+
+.selfie {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+.sources{
+    color: gold;
+    font-size: 150%;
+    
+    
+}
+.sources a:visited{
+    color: red;
+}
+.sources a:hover{
+    color: blue;
+}
+.sketch{
+    width: 400px;
+    height: 500px;
+    
+}
+.placeholder{
+    font-size: 350%;
+    text-align: center;
+}
+h3{
+    color: gray;
+}
+/*
+    Mobile View Changes
+*/
+@media only screen and (max-width: 600px) {
+
+    .navItem {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100px;
+    }
+
+    .navItem li a{
+        display: block;
+        float: right;
+    }
+
+    main {
+        margin: 2%;
+        padding: 0;
+    }
+    .sketch{
+        width: 200px;
+        height: 300px;
+    }
+    .selfie{
+        width: 275px;
+        height: 275px;
+    }
+}
