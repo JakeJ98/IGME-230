@@ -137,7 +137,7 @@ The player needs to learn correct timing and memorization to mavigate through th
 
 ## Other
 
-Currently I am still researching and working on my code alone, but If I were to sue any libraries, theyd be listed here.
+Currently I am still researching and working on my code alone, but If I were to use any libraries, theyd be listed here.
 
 * * *
 
